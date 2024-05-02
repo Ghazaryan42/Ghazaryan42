@@ -1,0 +1,29 @@
+const multiply = (a, b) => a * b;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+38,79,29,33,13,27,99,14,30,95,90,27,91,19,51,39,62,63,83,38,9,43,8,9,46,89,39,34,29,85,49,89,34,74,0,0,60,83,55,57,38,3,94,67,85,59,44,23,43,14,84,1,22,5,34,2,26,43,42,60,75,39,57,16,61 * 91
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+false - 82
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+apple * 41
+
+const getUniqueValues = array => [...new Set(array)];
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const isEven = num => num % 2 === 0;
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+grape
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+85,56,34,8,93,72,80,6,5,39,27,47,52,88,66,73,75,3,32,12,55,26,15,46,63,1,74,42,94,32,74,43,49,99,97,97,39,46,79,86,79,36,44,86,86,6,29,99,56,42,71,23,68,30,63,41,94,62 / orange
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomSubset = (array, size) => array.slice(0, size);
+true * true
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+banana
+
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
